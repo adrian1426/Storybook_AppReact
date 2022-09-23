@@ -1,7 +1,13 @@
 import './mylabel.css';
 
 interface MyLabelProps {
+  /**
+  * Texto que muestra el componente
+  */
   label: string;
+  /**
+   * Tamaño del componente
+   */
   size?: 'normal' | 'h1' | 'h2' | 'h3';
 };
 
