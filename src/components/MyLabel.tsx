@@ -25,7 +25,7 @@ const MyLabel = (props: MyLabelProps) => {
   const classLabel = primary ? 'text-primary' : 'text-secondary';
 
   return (
-    <span className={`${classLabel} ${size}`} style={{ backgroundColor }}>
+    <span className={`label ${classLabel} ${size}`} style={{ backgroundColor }}>
       {label}
     </span>
   );
