@@ -3,7 +3,10 @@ import MyLabel from "../../components/MyLabel";
 
 export default {
   title: 'Components/Label',
-  component: MyLabel
+  component: MyLabel,
+  argTypes: {
+    backgroundColor: { control: 'color' }
+  }
 } as ComponentMeta<typeof MyLabel>;
 
 const Template: ComponentStory<typeof MyLabel> = (args) => <MyLabel {...args} />;
@@ -14,12 +17,14 @@ export const Large = Template.bind({});
 
 Primary.args = {
   label: 'My label AHH',
-  size: 'normal'
+  size: 'normal',
+  primary: true
 };
 
 Secundary.args = {
   label: 'My label AHH',
-  size: 'normal'
+  size: 'normal',
+  primary: false
 };
 
 Large.args = {
